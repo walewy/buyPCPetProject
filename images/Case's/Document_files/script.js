@@ -34,10 +34,9 @@ let componentName = document.querySelector('.category-name')
 let productAddBtn = procesorsList.getElementsByClassName('list-item__add')
 let totalPriceForm = document.querySelector('.total-price')
 totalPriceForm.style.display = "none"
-procesorsList.style.display = "none"
 
 let cpuIsAdd = false
-let cpuListIsOpen = true
+let cpuListIsOpen = false
 let totalPricePC = 0
 let cpuPriceStory = []
 

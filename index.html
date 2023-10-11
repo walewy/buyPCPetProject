@@ -4,69 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style/main.css" rel="stylesheet"/>
+    <link href="style/menuStyle.css" rel="stylesheet"/>
     <title>Document</title>
     
 </head>
 <body>
+    <header>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    
+    <div class="menu">
+        <nav>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        </nav>
+    </div>
+    <div class="total-price">Цена</div>
     <div class="group-categories">
         <div class="configurator-category">
             <div class="computer-component">
                 <div class="category-name">Процессор</div>
-                <button class="category-controls">+ Добавить</button>
+                <button class="category-controls" id="cpu-list__open">+ Добавить</button>
             </div>
-            <div class="product-list">
+
+            <div class="product-list__cpu">
                 
             </div>
         </div>
         <div class="configurator-category">
             <div class="computer-component">
-                <div class="category-name">Материнская плата</div>
-                <button class="category-controls">+ Добавить</button>
-            </div>       
-        </div>
-        <div class="configurator-category">
-            <div class="computer-component">
-                <div class="category-name">Корпус</div>
-                <button class="category-controls">+ Добавить</button> 
+                <div class="category-name" id="motherboad_name">Материнская плата</div>
+                <button class="category-controls" id="motherboad-list__open">+ Добавить</button>
             </div>   
-        </div>
-        <div class="configurator-category">
-            <div class="computer-component">
-                <div class="category-name">Видеокарта</div>
-                <button class="category-controls">+ Добавить</button>
+
+            <div class="product-list__motherboards">
+                
             </div>
         </div>
         <div class="configurator-category">
             <div class="computer-component">
-                <div class="category-name">Охлаждение процессора</div>
-                <button class="category-controls">+ Добавить</button> 
-            </div>
-        </div>
-        <div class="configurator-category">
-            <div class="computer-component">
-                <div class="category-name">Оперативная память</div>
-                <button class="category-controls">+ Добавить</button>
-            </div>
-        </div>
-        <div class="configurator-category">
-            <div class="computer-component">
-                <div class="category-name">Хранение данных</div>
-                <button class="category-controls">+ Добавить</button>
-            </div>
-        </div>
-        <div class="configurator-category">
-            <div class="computer-component">
-                <div class="category-name">Блок питания</div>
-                <button class="category-controls">+ Добавить</button> 
-            </div>
-        </div>
-        <div class="configurator-category">
-            <div class="computer-component">
-                <div class="category-name">Звуковая карта</div>
-                <button class="category-controls">+ Добавить</button> 
+                <div class="category-name" id="case-name">Корпус</div>
+                <button class="category-controls" id="case-list__open">+ Добавить</button> 
             </div>   
+
+            <div class="product-list__case">
+
+            </div>
+        </div>
+        <div class="configurator-category">
+            <div class="computer-component">
+                <div class="category-name" id="videocard_name">Видеокарта</div>
+                <button class="category-controls" id="gpu-list__open">+ Добавить</button>
+            </div>
+
+            <div class="product-list__videocard">
+
+            </div>
+        </div>
+        <div class="configurator-category">
+            <div class="computer-component">
+                <div class="category-name" id="cooler-name">Охлождение процессора</div>
+                <button class="category-controls" id="cooler-list__open">+ Добавить</button> 
+            </div>
+
+            <div class="product-list__cooler">
+
+            </div>
+        </div>
+        <div class="configurator-category">
+            <div class="computer-component">
+                <div class="category-name" id="ram-name">Оперативная память</div>
+                <button class="category-controls" id="ram-list__open">+ Добавить</button>
+            </div>
+
+            <div class="product-list__ram">
+
+            </div>
+        </div>
+        <div class="configurator-category">
+            <div class="computer-component">
+                <div class="category-name" id="ssd-name">Хранение данных</div>
+                <button class="category-controls" id="ssd-list__open">+ Добавить</button>
+            </div>
+
+            <div class="product-list__ssd">
+
+            </div>
+        </div>
+        <div class="configurator-category">
+            <div class="computer-component">
+                <div class="category-name" id="psu-name">Блок питания</div>
+                <button class="category-controls" id="psu-list__open">+ Добавить</button> 
+            </div>
+
+            <div class="product-list__psu">
+
+            </div>
+        </div>
+        <div class="configurator-category">
+            <div class="computer-component">
+                <div class="category-name" id="soundcard-name">Звуковая карта</div>
+                <button class="category-controls" id="soundcard-list__open">+ Добавить</button> 
+            </div>   
+
+            <div class="product-list__soundcard">
+
+            </div>
         </div>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/addMotherboads.js"></script>
+    <script src="js/addCases.js"></script>
+    <script src="js/addVideoCard.js"></script>
+    <script src="js/addCoolers.js"></script>
+    <script src="js/addRAM.js"></script>
+    <script src="js/addSsd.js"></script>
+    <script src="js/addPsu.js"></script>
+    <script src="js/addSoundCard.js"></script>
+    <script src="js/menuActivitis.js"></script>
 </body>
 </html>
